@@ -463,10 +463,5 @@ const questions = [
         question: "Sun'iy intellekt bilan blokcheynni integratsiyasini qaysi:",
         options: ["Kraudsorsing", "Data science", "General texnology", "Hamma javob to’g’ri"],
         correct: 3
-    },
-    {
-        question: "Makroiqtisodiyot nima?",
-        options: ["Xo‘jalik sub’yektlari iqtisodiy faoliyatini o‘rganadi", "Faqat korxonalar iqtisodiy faoliyatini o‘rganadi", "Butun iqtisodiy tizimning ishlashini o‘rganadi", "Iqtisodiyotning alohida tarmoqlarini o‘rganadi"],
-        correct: 2
-    }
+    },    
 ];
