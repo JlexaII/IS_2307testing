@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg w-full max-w-md">
-        <div class="timer" id="timer" style="display: none; text-align: center; font-size: 18px; color: red; padding: 10px;">00:30:00</div>
+        <div class="timer" id="timer"
+            style="display: none; text-align: center; font-size: 18px; color: red; padding: 10px;">00:30:00</div>
 
         <div class="start-page" id="startPage">
             <div class="w-128 h-auto mx-auto my-4">
@@ -20,23 +23,32 @@
             <h2 class="text-2xl font-bold text-center mb-6">Iqtisodiyot IS-23/07 II-kurs</h2>
             <div class="mb-4">
                 <label for="subjectSelect" class="block text-sm font-medium text-gray-700">Fanni tanlang:</label>
-                <select id="subjectSelect" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select id="subjectSelect"
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="raqamli">Raqamli Iqtisodiyot</option>
                     <option value="ekonometrika">Ekonometrika</option>
                     <option value="makroiqtisodiyot">Makroiqtisodiyot</option>
                     <option value="buxgalteriyahisobi">Buxgalteriya Hisobi</option>
                 </select>
             </div>
-            <button id="startBtn" onclick="startQuiz()" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Test Boshlash</button>
+            <button id="startBtn" onclick="startQuiz()"
+                class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Test
+                Boshlash</button>
         </div>
 
         <div class="quiz-page" id="quizPage" style="display: none;">
-            <button class="finish-btn bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 mb-4" onclick="finishQuiz()">Tugadi</button>
+            <button
+                class="finish-btn bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 mb-4"
+                onclick="finishQuiz()">Tugadi</button>
             <div id="currentQuestion">
                 <div id="questionText" class="mb-4"></div>
                 <div id="options" class="options mb-4"></div>
-                <button id="prevBtn" onclick="prevQuestion()" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mr-2" style="display: none;">Oldingi</button>
-                <button id="nextBtn" onclick="nextQuestion()" class="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" style="display: none;">Keyingi</button>
+                <button id="prevBtn" onclick="prevQuestion()"
+                    class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mr-2"
+                    style="display: none;">Oldingi</button>
+                <button id="nextBtn" onclick="nextQuestion()"
+                    class="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    style="display: none;">Keyingi</button>
             </div>
         </div>
 
@@ -44,7 +56,9 @@
             <h1 class="text-2xl font-bold text-center mb-4">Natija</h1>
             <p id="resultText" class="text-center mb-4"></p>
             <div id="resultDetails" class="result-details mb-4"></div>
-            <button onclick="restartQuiz()" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Yana Sinov</button>
+            <button onclick="restartQuiz()"
+                class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Yana
+                Sinov</button>
         </div>
     </div>
 
@@ -196,5 +210,29 @@
             clearInterval(timerInterval);
         }
     </script>
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(89157645, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/89157645" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
+
 </html>

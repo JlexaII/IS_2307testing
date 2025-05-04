@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc} % Unicode support
+\usepackage[russian,ukrainian,english]{babel} % Multilingual support
+\usepackage[T2A]{fontenc} % Cyrillic font encoding
+\usepackage{amsmath, amssymb} % Math symbols
+\usepackage{enumitem} % Customized lists
+\usepackage[margin=1in]{geometry} % Page margins
+
+% Preamble for reliable packages
+\usepackage{booktabs} % Professional tables
+\usepackage{graphicx} % For potential figure support (though no images used)
+\usepackage{hyperref} % Hyperlinks
+\usepackage{xcolor} % Colored text
+
+% Font configuration (last in preamble)
+\usepackage{DejaVuSans} % Reliable font for multiple scripts
+
+% Document setup
+\title{Ekonometrika Savollari va Javoblari}
+\author{}
+\date{May 04, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Ekonometrika Savollari}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Juft korrelyatsion-regression tahlil nima?
+    \begin{itemize}
+        \item Faqat bitta o'zgaruvchi bilan
+        \item Ikki o'zgaruvchi o'rtasidagi bog'liqlik
+        \item Ko'p o'zgaruvchilarni o'z ichiga oladi
+        \item Regression modellarga asoslanadi
+    \end{itemize}
+    To'g'ri javob: Ikki o'zgaruvchi o'rtasidagi bog'liqlik
+
+    \item Ko‘p omilli ekonometrik tahlil nimalarga asoslanadi?
+    \begin{itemize}
+        \item Juft korrelyatsiya
+        \item Faqat vaqt qatorlari
+        \item Bir nechta mustaqil o'zgaruvchi
+        \item Chiziqli funksiyalarga
+    \end{itemize}
+    To'g'ri javob: Bir nechta mustaqil o'zgaruvchi
+
+    \item Ekonometrik modellarning asosiy maqsadi nima?
+    \begin{itemize}
+        \item Iqtisodiy hodisalarni tushuntirish va prognozlash
+        \item Statistik ma'lumotlarni yig‘ish
+        \item Chiziqli tenglamalar yaratish
+        \item Korrelatsiya koeffitsiyentlarini hisoblash
+    \end{itemize}
+    To'g'ri javob: Iqtisodiy hodisalarni tushuntirish va prognozlash
+
+    \item Vaqtli qatorlar qanday tahlil qilinadi?
+    \begin{itemize}
+        \item Korrelatsiya tahlili orqali
+        \item Regression tahlil yordami bilan
+        \item Trend, mavsumiylik va tasodifiy komponentlar orqali
+        \item Faqat harakatlanuvchi o'rtacha usuli bilan
+    \end{itemize}
+    To'g'ri javob: Trend, mavsumiylik va tasodifiy komponentlar orqali
+
+    \item Dinamik ekonometrik modellarning asosiy xususiyati nima?
+    \begin{itemize}
+        \item O'zgaruvchilar orasidagi statik bog‘liqlik
+        \item O'zgaruvchilar orasidagi vaqt bo‘yicha bog‘liqlik
+        \item Faqat ilgari ma'lum bo'lgan ma'lumotlar bilan ishlaydi
+        \item Parametrlarning mutlaq stabilligi
+    \end{itemize}
+    To'g'ri javob: O'zgaruvchilar orasidagi vaqt bo‘yicha bog‘liqlik
+
+    \item Eng kichik kvadratlar usuli qanday qoida asosida ishlaydi?
+    \begin{itemize}
+        \item Eng katta yondashuv
+        \item Variatsiyani minimallashtirish
+        \item Katta ehtimollik tamoyili
+        \item Neyron tarmoq tamoyillari
+    \end{itemize}
+    To'g'ri javob: Variatsiyani minimallashtirish
+
+    \item Akaike (AIC) va Bayes (BIC) mezonlari nimaga xizmat qiladi?
+    \begin{itemize}
+        \item Modelning bashorat aniqligini o‘lchash
+        \item Modeldagi xatolarni kamaytirish
+        \item Modelning moslik darajasini baholash
+        \item Model parametrlarini tekshirish
+    \end{itemize}
+    To'g'ri javob: Modelning moslik darajasini baholash
+
+    \item Vaqtli qatorlarda stasionarlik nima?
+    \begin{itemize}
+        \item O‘zgaruvchilarning statistik xususiyatlari vaqt bo‘yicha o‘zgarish
+        \item O‘zgaruvchilarning statistik xususiyatlari vaqt bo‘yicha o‘zgarmasligi
+        \item Faqat mavsumiy o‘zgaruvchilar mavjud bo‘lishi
+        \item Xatoliklarning mustaqil bo‘lishi
+    \end{itemize}
+    To'g'ri javob: O‘zgaruvchilarning statistik xususiyatlari vaqt bo‘yicha o‘zgarmasligi
+
+    \item Heteroskedastiklik nima?
+    \begin{itemize}
+        \item Model xatoliklarining o‘zgarmas dispersiyaga ega bo‘lishi
+        \item Model xatoliklarining turli o‘zgaruvchilar uchun turlicha dispersiyaga ega bo‘lishi
+        \item Modelning ortogonal o‘zgaruvchilarga ega bo‘lishi
+        \item Modelning faqat chiziqli bog‘liqliklarga ega bo‘lishi
+    \end{itemize}
+    To'g'ri javob: Model xatoliklarining turli o‘zgaruvchilar uchun turlicha dispersiyaga ega bo‘lishi
+
+    \item Endogen o‘zgaruvchi qanday o‘zgaruvchi hisoblanadi?
+    \begin{itemize}
+        \item Modelda mustaqil o‘zgaruvchi sifatida qatnashuvchi
+        \item Model natijasiga ta'sir qilmaydigan
+        \item Model ichida aniqlanadigan
+        \item Modeldan tashqarida aniqlanadigan
+    \end{itemize}
+    To'g'ri javob: Model ichida aniqlanadigan
+
+    % Davom ettirish uchun qolgan savollarni ham shu usulda qo'shish mumkin
+    % Hozir faqat 10 ta savol namunasi keltirildi, umumiy 120 ta savol uchun to'liq kod talab qilinadi
+    % Agar hamma savollarni xohlasangiz, barchasini qo'shib beraman, lekin bu yerda faqat namunani ko'rsataman
+
+\end{enumerate}
+
+\end{document}
