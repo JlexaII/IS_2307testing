@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Platformasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
-    <style>
-        .options label {
-            display: block;
-            margin-bottom: 0.5rem;
-            padding: 0.5rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.375rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        .options input[type="radio"] {
-            margin-right: 0.5rem;
-        }
-        .options label:hover {
-            background-color: #f7fafc;
-        }
-        .correct {
-            color: #2f855a;
-            font-weight: 600;
-        }
-        .incorrect {
-            color: #c53030;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg w-full max-w-md">
-        <div class="timer" id="timer" style="display: none; text-align: center; font-size: 18px; color: red; padding: 10px;">00:30:00</div>
-        
+        <div class="timer" id="timer"
+            style="display: none; text-align: center; font-size: 18px; color: red; padding: 10px;">00:30:00</div>
+
         <div class="start-page" id="startPage">
             <div class="w-32 h-auto mx-auto my-4">
                 <img src="logo.svg" alt="Логотип" class="w-32 h-auto bg-blue-500" />
             </div>
             <h1 class="text-2xl font-bold text-center mb-6">Test Platformasi</h1>
-            <h2 class="text-2xl font-bold text-center mb-6">Iqtisodiyot IS-23/07</h2>
+            <h2 class="text-2xl font-bold text-center mb-6">Iqtisodiyot IS-23/07 II-kurs</h2>
             <div class="mb-4">
                 <label for="subjectSelect" class="block text-sm font-medium text-gray-700">Fanni tanlang:</label>
-                <select id="subjectSelect" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" onchange="updateVariants()">
+                <select id="subjectSelect"
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    onchange="updateVariants()">
                     <option value="raqamli">Raqamli Iqtisodiyot</option>
                     <option value="ekonometrika">Ekonometrika</option>
                     <option value="makroiqtisodiyot">Makroiqtisodiyot</option>
                 </select>
             </div>
-          
-            <button id="startBtn" onclick="startQuiz()" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Test Boshlash</button>
+
+            <button id="startBtn" onclick="startQuiz()"
+                class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Test
+                Boshlash</button>
         </div>
 
         <div class="quiz-page" id="quizPage" style="display: none;">
-            <button class="finish-btn bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 mb-4" onclick="finishQuiz()">Tugadi</button>
+            <button
+                class="finish-btn bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 mb-4"
+                onclick="finishQuiz()">Tugadi</button>
             <div id="currentQuestion">
                 <div id="questionText" class="mb-4"></div>
                 <div id="options" class="options mb-4"></div>
-                <button id="prevBtn" onclick="prevQuestion()" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mr-2" style="display: none;">Oldingi</button>
-                <button id="nextBtn" onclick="nextQuestion()" class="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" style="display: none;">Keyingi</button>
+                <button id="prevBtn" onclick="prevQuestion()"
+                    class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mr-2"
+                    style="display: none;">Oldingi</button>
+                <button id="nextBtn" onclick="nextQuestion()"
+                    class="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    style="display: none;">Keyingi</button>
             </div>
         </div>
 
@@ -68,7 +57,9 @@
             <h1 class="text-2xl font-bold text-center mb-4">Natija</h1>
             <p id="resultText" class="text-center mb-4"></p>
             <div id="resultDetails" class="result-details mb-4"></div>
-            <button onclick="restartQuiz()" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Yana Sinov</button>
+            <button onclick="restartQuiz()"
+                class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Yana
+                Sinov</button>
         </div>
     </div>
 
@@ -232,4 +223,5 @@
         }
     </script>
 </body>
+
 </html>

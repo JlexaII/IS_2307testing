@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.options label {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.options input[type="radio"] {
+    margin-right: 0.5rem;
+}
+.options label:hover {
+    background-color: #f7fafc;
+}
+.correct {
+    color: #2f855a;
+    font-weight: 600;
+}
+.incorrect {
+    color: #c53030;
+    font-weight: 600;
+}
