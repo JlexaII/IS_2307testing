@@ -72,6 +72,7 @@
     <script src="digital_economy.js"></script>
     <script src="ekonometrika.js"></script>
     <script src="makroiqtisodiyot.js"></script>
+    <script src="accounting_questions.js"></script>
     <script>
         let selectedQuestions = [];
         let currentQuestionIndex = 0;
@@ -95,7 +96,7 @@
             } else if (currentSubject === "makroiqtisodiyot") {
                 sourceQuestions = makroiqtisodiyotQuestions;
             } else if (currentSubject === "buxgalteriyahisobi") {
-                sourceQuestions = []; // Placeholder, так как вопросы отсутствуют
+                sourceQuestions = accountingQuestions;
             }
 
             // Проверка на наличие вопросов
