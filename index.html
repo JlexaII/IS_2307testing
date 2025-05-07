@@ -17,9 +17,37 @@
             style="display: none; text-align: center; font-size: 18px; color: red; padding: 10px;">00:30:00</div>
 
         <div class="start-page" id="startPage">
-            <div class="w-128 h-auto mx-auto my-4">
-                <img src="guruh.jpeg" alt="Логотип" />
+            <div class="w-64 h-64 mx-auto my-4 relative overflow-hidden">
+                <img src="guruh.jpeg" alt="Фото 1"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100 z-10">
+                <img src="guruh2.jpeg" alt="Фото 2"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-0">
+                <img src="guruh3.jpeg" alt="Фото 3"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-0">
+                    <img src="guruh4.jpeg" alt="Фото 3"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-0">
+                    <img src="guruh5.jpeg" alt="Фото 3"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-0">
+                    <img src="guruh6.jpeg" alt="Фото 3"
+                    class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 z-0">
             </div>
+
+            <script>
+                const images = document.querySelectorAll('.slider-img');
+                let current = 0;
+
+                setInterval(() => {
+                    const next = (current + 1) % images.length;
+
+                    images[current].classList.remove('opacity-100');
+                    images[current].classList.add('opacity-0');
+                    images[next].classList.remove('opacity-0');
+                    images[next].classList.add('opacity-100');
+
+                    current = next;
+                }, 3000); // каждые 3 секунды
+            </script>
+
             <!-- /Yandex.Metrika counter -->
 
             <a href="https://metrika.yandex.ru/stat/?id=89157645" target="_blank" rel="nofollow">
